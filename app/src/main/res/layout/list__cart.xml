@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="5sp"
+    android:layout_marginBottom="5sp"
+    android:orientation="horizontal"
+    android:paddingLeft="25sp"
+    android:paddingTop="15sp"
+    android:paddingEnd="15sp"
+    android:paddingRight="25sp"
+    app:cardBackgroundColor="#F0EFEF"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/itemImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        tools:src="#009688" />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="123dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="#919191"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="97dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemQuantity"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="75dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableRight="@drawable/custom__ic_delete"
+        android:text="Remove"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/itemTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="120dp"
+        android:textColor="#2456AA"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</androidx.cardview.widget.CardView>
